@@ -1,0 +1,304 @@
+/* a font do website original não funcionou aqui (scandia-web), então usei sans-serif mesmo e alterei a cor */
+
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #9E9E9E;
+    overflow-x: hidden;
+
+}
+
+body{
+    color: #878787;
+}
+
+h1{
+    color: black;
+    font-size: 2.5em;
+}
+
+header{
+    padding: 1.5em 5.5% 1.25em;
+}
+
+#contentHeader{
+    padding: 0 2em;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+
+}
+
+#left{
+    width: 55%;
+    height: 550px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#right{
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+}
+
+.imgsLogo{
+    margin-right: 4.5%;
+    display: flex;
+}
+
+img.logo{
+    vertical-align: middle;
+}
+
+.logo:first-child{
+    margin-right: 1.25em;
+}
+
+nav>ul>li{
+    padding-right: 35px;
+    display: inline-block;
+}
+
+nav>ul>li:last-child{
+    margin-right: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    max-width: auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #878787;
+}
+
+.navMain{
+    transition: all 1s;
+}
+
+#searchBox{
+    width: 23%;
+    position: absolute;
+    right: 0;
+    border-bottom: 1px solid #878787;
+    transition: all 1s;
+}
+
+#hiddenMenu{
+    display: none;
+    height: 0px;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    transition: all 1s;
+    margin: auto;
+}
+
+#hiddenMenu ul li{
+    padding: 15px;
+    list-style-type: none;
+}
+
+#menuIcon:hover {
+    cursor: pointer;
+}
+
+#menuIcon:active li{
+    display: inline-block;
+}
+
+#bigBox{
+    position: absolute;
+    left: 0;
+    margin-top: 2em;
+    padding: 0 5.5%;
+    padding-top: 10%;
+    width: auto;
+    height: 500px;
+}
+
+#botoes div{
+    display: inline-block;
+    font-weight: bold;
+}
+
+#botoes div:hover{
+    cursor: pointer;
+}
+
+#vermelho{
+    background: red;
+    color: white;
+    padding: 15px 30px;
+}
+
+#branco{
+    color: red;
+    border: 2px solid red;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    margin-left: 20px;
+    position: relative;
+    top: 6px;
+}
+
+#banner{
+    position: absolute;
+    left: 0;
+    top: 2em;
+    height: 50px;
+    display: inline-block;
+}
+
+#banner img{ /* imagem banner */
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+#banner div{ /* esse banner tive que fazer na gambiarra, 
+            pq não tava aumentando o width da div de acordo com o tamanho do texto */
+    
+    position: relative;
+    left: -5px;
+    top: -20px;
+    padding: 16px;
+    background: #FAF9F9;
+    display: inline-block;
+
+}
+
+#banner div{
+    transition: all 1s;
+}
+
+#banner div span:hover{
+    position: relative;
+    left: 5px;
+}
+
+#content{
+    min-width: 50%;
+    max-width: 50%;
+}
+
+#content p{
+    font-size: 1.2em;
+}
+
+/* Hover individual (menubar) */
+
+nav>ul>li:nth-child(1):hover{
+    font-size: 18px;
+}
+
+nav>ul>li:nth-child(2):hover{
+    font-size: 18px;
+}
+
+nav>ul>li:nth-child(3):hover{
+    font-size: 18px;
+}
+
+nav>ul>li:nth-child(4):hover{
+    font-size: 18px;
+}
+
+nav>ul>li:nth-child(5):hover{
+    font-size: 18px;
+}
+
+/* media queries */
+
+@media (max-width: 1080px){
+
+    .navMain{
+        width: 0%;
+        overflow: hidden;
+    }
+
+    #searchBox{
+        width: 30px;
+    }
+
+    #searchBox input{
+        width: 0;
+        display: none;
+    }
+
+    #searchBox{
+        position: absolute;
+        right: 100px;
+    }
+
+    #menuIcon{
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    #hiddenMenu{
+        display: inline-block;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 768px){
+    #right{
+        display: none;
+    }
+
+    #left{
+        text-align: center;
+        margin-right: 0;
+        padding: 1.5em 5.5% 1.25em;
+        width: auto;
+    }
+
+    #content{
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-top: 110px;
+    }
+
+    #bigBox{
+        margin-top: 0;
+       
+        
+    }
+
+    h1{
+        font-size: 2.1em;
+    }
+
+    #botoes{
+        position: relative;
+        right: 20px;
+    }
+
+    #banner{
+        width: 100%;
+    }
+
+    #banner div{
+        display: block;
+    }
+
+    #banner img{
+        margin-bottom: 30px;
+    }
+
+    #botoes{
+        text-align: center;
+    }
+
+
+
+}
