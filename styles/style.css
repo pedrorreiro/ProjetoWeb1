@@ -208,9 +208,10 @@ a{
     transition: all 1s;
 }
 
-#banner div span:hover{
-    position: relative;
-    left: 5px;
+#banner div:hover{
+    padding-left: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 
