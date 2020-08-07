@@ -1,4 +1,9 @@
-/* a font do website original não funcionou aqui (scandia-web), então usei sans-serif mesmo e alterei a cor */
+/* A font do website original não funcionou aqui (scandia-web), 
+   então usei sans-serif mesmo e alterei a cor */
+
+/* Professor, encontrei algumas dificuldades na hora de deixar
+   a página responsiva, então fiz algumas mudanças. Ela está
+   reponsiva, mas não igual à original.*/
 
 html{
     font-size: 16px;
@@ -88,6 +93,10 @@ a{
     transition: all 1s;
 }
 
+#lupa:hover{
+    cursor: pointer;
+}
+
 #hiddenMenu{
     display: none;
     height: 0px;
@@ -116,7 +125,6 @@ a{
     left: 0;
     margin-top: 2em;
     padding: 0 5.5%;
-    padding-top: 10%;
     width: auto;
     height: 500px;
 }
@@ -128,6 +136,10 @@ a{
 
 #botoes div:hover{
     cursor: pointer;
+}
+
+#botoes{
+    width: 150%;
 }
 
 #vermelho{
@@ -151,7 +163,6 @@ a{
 #banner{
     position: absolute;
     left: 0;
-    top: 2em;
     height: 50px;
     display: inline-block;
 }
@@ -184,8 +195,10 @@ a{
 }
 
 #content{
+    position: relative;
     min-width: 50%;
     max-width: 50%;
+    top: 10%;
 }
 
 #content p{
@@ -285,6 +298,7 @@ nav>ul>li:nth-child(5):hover{
 
     #banner{
         width: 100%;
+        top: 0em;
     }
 
     #banner div{
@@ -299,6 +313,126 @@ nav>ul>li:nth-child(5):hover{
         text-align: center;
     }
 
+}
+
+/* Media Queries */
+
+@media (max-width: 1080px){
+
+    .navMain{
+        width: 0%;
+        overflow: hidden;
+    }
+
+    #searchBox{
+        width: 30px;
+    }
+
+    #searchBox input{
+        width: 0;
+        display: none;
+    }
+
+    #searchBox{
+        position: absolute;
+        right: 100px;
+    }
+
+    #menuIcon{
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    #hiddenMenu{
+        display: inline-block;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 768px){
+    #right{
+        display: none;
+    }
+
+    #left{
+        text-align: center;
+        margin-right: 0;
+        padding: 1.5em 5.5% 1.25em;
+        width: auto;
+    }
+
+    #content{
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-top: 20%;
+    }
+
+    #bigBox{
+        margin-top: 0;
+    }
+
+    h1{
+        font-size: 2.1em;
+    }
+
+    #botoes{
+        position: relative;
+        left: 20px;
+    }
+
+    #banner{
+        width: 100%;
+    }
+
+    #banner div{
+        display: block;
+    }
+
+    #banner img{
+        margin-bottom: 30px;
+    }
+
+    #botoes{
+        text-align: center;
+        width: 100%;
+    }
 
 
+}
+
+@media (max-width: 425px){
+    #content{
+        margin-top: 40%;
+    }
+
+    #botoes{
+        right: 0;
+    }
+
+    #vermelho{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    #branco{
+        margin-left: 0;
+    }
+
+    #botoes{
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px){
+    #content{
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 320px){
+    #content{
+        margin-top: 50%;
+    }
 }
