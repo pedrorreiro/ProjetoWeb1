@@ -1,9 +1,18 @@
 /* A font do website original não funcionou aqui (scandia-web), 
-   então usei sans-serif mesmo e alterei a cor */
+   então usei sans-serif mesmo e alterei a cor 
+*/
 
 /* Professor, encontrei algumas dificuldades na hora de deixar
    a página responsiva, então fiz algumas mudanças. Ela está
-   reponsiva, mas não igual à original.*/
+   reponsiva, mas não igual à original.
+*/
+
+/* O fundo da página original é animado, então usei uma imagem mesmo */
+
+/* Não fiz vários commits no git porque o dominio github.io normalmente
+   demora um pouco pra atualizar, então testar o código em tempo real
+   por lá não seria viável 
+*/
 
 html{
     font-size: 16px;
@@ -326,16 +335,12 @@ nav>ul>li:nth-child(5):hover{
 
     #searchBox{
         width: 30px;
+        right: 6%;
     }
 
     #searchBox input{
         width: 0;
         display: none;
-    }
-
-    #searchBox{
-        position: absolute;
-        right: 100px;
     }
 
     #menuIcon{
