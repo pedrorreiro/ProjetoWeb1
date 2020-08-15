@@ -109,14 +109,32 @@ a{
     cursor: pointer;
 }
 
-#hiddenMenu{  /* Menu escondido (recursivo pra telas menores) */
+#lupa{
+    margin-right: 10px;
+}
+
+#menuIcon{
     display: none;
-    height: 0px;
+    
+}
+
+#menuIcon:hover{
+    cursor: pointer;
+}
+
+#hiddenMenu:hover ul,li{
+    display: block;
+
+
+}
+
+#hiddenMenu ul{  /* Menu escondido (recursivo pra telas menores) */
+    display: none;
     width: 100%;
     margin-top: 25px;
     text-align: center;
-    transition: all 1s;
     margin: auto;
+    overflow: visible;
 }
 
 #hiddenMenu ul li{
@@ -192,8 +210,9 @@ a{
     display: inline-block;
 }
 
-#banner div{ /* esse banner tive que fazer na gambiarra, 
-            pq não tava aumentando o width da div de acordo com o tamanho do texto */
+#banner div{ 
+    /* esse banner tive que fazer na gambiarra, 
+        pq não tava aumentando o width da div de acordo com o tamanho do texto */
     
     position: relative;
     left: -5px;
@@ -202,7 +221,7 @@ a{
     background: #FAF9F9;
     display: inline-block;
 
-}
+}   
 
 #banner div{
     transition: all 1s;
@@ -251,7 +270,7 @@ nav>ul>li:nth-child(5):hover{
     }
 
     #searchBox{
-        width: 30px;
+        width: 17%;
         right: 6%;
     }
 
@@ -267,12 +286,18 @@ nav>ul>li:nth-child(5):hover{
 
     #hiddenMenu{
         display: inline-block;
-        height: 300px;
+        width: 100%;
+        text-align: center;
     }
 
 }
 
 @media (max-width: 768px){
+
+    #menuIcon{
+        display: inline-block;
+    }
+
     #right{
         display: none;
     }
@@ -325,6 +350,11 @@ nav>ul>li:nth-child(5):hover{
 }
 
 @media (max-width: 425px){
+
+    #searchBox{
+        width: 19%;
+    }
+
     #content{
         margin-top: 40%;
     }
@@ -351,10 +381,15 @@ nav>ul>li:nth-child(5):hover{
     #content{
         margin-top: 50%;
     }
+
+    #lupa{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 320px){
     #content{
         margin-top: 50%;
     }
+
 }
