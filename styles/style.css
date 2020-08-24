@@ -24,6 +24,7 @@ html{
 
 body{
     color: #878787;
+    padding: 0 5.5%;
 }
 
 h1{
@@ -150,6 +151,8 @@ a{
     width: auto;
     height: 500px;
 }
+
+
 
 #botoes div{
     display: inline-block;
@@ -313,7 +316,7 @@ nav>ul>li:nth-child(5):hover{
         width: 100%;
         max-width: 100%;
         margin-right: 0;
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     #bigBox{
@@ -326,19 +329,27 @@ nav>ul>li:nth-child(5):hover{
 
     #botoes{
         position: relative;
-        left: 20px;
     }
 
-    #banner{
-        width: 100%;
+    #banner div{ 
+
+        text-align: left;
+        position: relative;
+        left: 50px;
+    }
+
+    #banner div span{
+        font-size: 12px;
     }
 
     #banner div{
-        display: block;
+        position: relative;
+        top: 0px;
     }
 
     #banner img{
-        margin-bottom: 30px;
+        position: absolute;
+        left: 0;
     }
 
     #botoes{
@@ -346,6 +357,28 @@ nav>ul>li:nth-child(5):hover{
         width: 100%;
     }
 
+    #content h1, p{
+        text-align: left;
+
+    }
+
+    #content h1{
+        max-width: 12.5em;
+    }
+
+    #content p{
+        max-width: 32.888em;
+    }
+
+    #vermelho{
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    #branco{
+        margin-left: 0;
+        width: 60%;
+    }
 
 }
 
@@ -356,40 +389,53 @@ nav>ul>li:nth-child(5):hover{
     }
 
     #content{
-        margin-top: 40%;
+        margin-top: 15%;
     }
 
-    #botoes{
-        right: 0;
+    #content p{
+        font-size: 1em;
     }
 
     #vermelho{
-        width: 50%;
+        width: 70%;
         margin-bottom: 10px;
     }
 
     #branco{
         margin-left: 0;
+        width: 70%;
     }
 
     #botoes{
         width: 90%;
+        padding-top: 20px;
     }
+
+    #logo2{
+	    display: none;
+    }
+    
 }
 
 @media (max-width: 375px){
     #content{
-        margin-top: 50%;
+        margin-top: 20%;
     }
 
     #lupa{
         margin-right: 0;
     }
+
+    #content h1{
+        font-size: 1.7em;
+    }
 }
 
 @media (max-width: 320px){
     #content{
-        margin-top: 50%;
+        margin-top: 20%;
     }
+
+
 
 }
